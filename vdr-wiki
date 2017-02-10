@@ -1,4 +1,5 @@
 A vdr felhasználókat érintő könyvtárai, melyeket minden felhasználó módosíthat, beléjük írkálhat.
+
 Minden alább felsorolt könyvtár users (999) csoportú, a tulajdonostól függetlenül.
 Épp ezért a vdr indítás root felhasználóként erősen ellenjavallt!
 (Hogy ne hozzon létre a root bennük más által módosíthatatlan fájlt.)
@@ -13,8 +14,8 @@ A fő konfigurációs könyvtár, melybe mi is, meg a vdr is írkál
 A pluginok konfigurációs könyvtára, melybe a pluginok is írkálnak
 
 /etc/vdr/conf.d
-A vdr működését definiáló könyvtár. Az ebben lévő tetszőleges nevű fájlokat a vdr csak akkor olvassa, ha nem volt indításakor parancssori kiegészítése. ABC rendben olvassa őket és parancssor kiegészítésként értelmezi és használja őket. A fájlokban # -el kezdő sorokat figyelmen kívül hagyja.
-Mindegyiket soronként olvassa.
+A vdr működését definiáló könyvtár.
+Az ebben lévő tetszőleges nevű fájlokat a vdr csak akkor olvassa, ha nem volt indításakor parancssori kiegészítése. ABC rendben olvassa őket és parancssor kiegészítésként értelmezi és használja őket. A fájlokban # -el kezdő sorokat figyelmen kívül hagyja, mindegyiket soronként olvassa.
 Az első sorban szerepló [pluginnév] hatására betölti a plugint, a fájlban szereplő többi sorban leírt cuccokat meg az illető pluginnak fogja átadni paraméterként. Ha az első sorban [vdr] szerepel, akkor ez nem plugin, hanem magának a vdr -nek szól.
 Az ebben a könyvtárban lévő és a pluginok feltelepítésekor szállított fájlokat tehát meg kell szerkesztgetnünk a kívánt vdr konfigurációnk szerint.
 
@@ -25,9 +26,6 @@ A vdr indítására több lehetőségünk is van.
 2.Van egy másik is, a vdr-szkriptes, mely az eddig megszokott módon a /usr/bin/vdrlaunch nevű indítót indítja, mely a /usr/share/vdr/vdrstart szkriptet másolja be először a /etc/vdr könyvtárba, ha az ott nem lenne és azzal indítja a vdr-t, az abban általunk szerkeszthető paraméterekkel.
 
 Ezt a 2. -es módot nem likvidáltam, mert nagyobb így a szabadság fok.
-
-A vdr/xbmc páros meg nyugodtan indul a régi módon, hisz ott parancssorból szkript által indul az xbmc indulása előtt a -Psc és a -Pxvdr paraméterekkel.
-
 
 Az átállással egyidőben pár pluginunk új nevet kapott:
 
@@ -60,10 +58,63 @@ A vdr feltelepítésekor ezeket a konfigurációs fájlokat szállítja:
 
 
 Ezek csak példa konfigurációk, a channels.conf a 19.2E Astra műholdon lévő német adók listáját tartalmazza. Valószínű, hogy nekünk nem erre lesz szükségünk. A diseqc.conf csak a műholdasoknak kell többfejes, vagy forgatómotoros rendszerekhez, földi és kábel adóknál biztos nem kell. A sources.conf az aktuálisan működő műholdak listáját tartalmazza. A remote.conf, a setup conf még hiányzik, majd menet közben jönnek létre. A /etc/vdr/conf.d/01-vdr.conf tanulmányozása és szerkesztése sokat segíthet. A péda pluginokra valószínűleg soha nem lesz szükségünk, habár ki tudja?
-Alapból a vdr a beleépített Lcars skin-nel indul. Minimális induláshoz elegendő egy megjelenítő plugin, sőt, mi több, dvb eszköz híján is indul.
-A xineliboutput plugin szinte mindig működik általában nem kell neki külön opció az ablakjának megjelenéséhez, ha megfelelő opcióját választjuk, a --video=xv a legbiztosabb. Illetve a --video=auto.
+Minimális induláshoz elegendő egy megjelenítő plugin, sőt, mi több, dvb eszköz híján is indul.
+
+Az alap vdr önmagában pluginok nélkül csak akkor használható, ha a dvb kártya képes videó és hang megjelenítésére, azaz "full featured" képességű, ekkor a dvb eszköz rendelkezik magában is valamilyen megjelenítő kimenettel, melyre a megjelenítő eszköz csatlakozhat.
+Ha nem ilyen a dvb eszköz, akkor vagy adatfolyam továbbító, vagy megjelenítő pluginra van szüksége.
+
+Kódolt adók vételéhez előfizetéses kártya kell és ennek fogadására képes DVB eszköz.
+Ha az eszköz nem ilyen, akkor is kell elérhető előfizetéses kártya valamilyen kártyaolvasóban, melyhez a vdr pluginnal csatlakozni tud.
+
+Fontosabb pluginok
+vdr-dvbapi
+vdr-plugin-sc
+
+Adatfolyam pluginok
+
+vdr-plugin-streamdev: hálózatba továbbítja az adatfolyamot
+vdr-plugin-xvdr: Az xbmc, újabb nevén a kodi számára szolgáltatja az adatfolyamot.
+
+Megjelenítő pluginok
+
+vdr-softhddevice: ffmpeg alapú truecolor
+vdr-xineliboutput: xine-lib alapú
+vdr-xine: xine-ui -t használó
+skincurses: csak karakteres terminált használó és a kezelő felületet megjelenítő 
+
+Kódolt adók vételét elősegítő pluginok
+
+vdr-plugin-sc: hagyományos kártyaolvasókhoz csatlakozás
+vdr-dvbapi: OSCAM kártyakezelő szerverhez csatlakozás
+
+OSD felület pluginok
+
+vdr-skinelchi
+vdr-skinflat
+vdr-skinflatpus
+vdr-skinnopacity
+vdr-skinsoppalusikka
+vdr-plugin-skinenigmang
+vdr-plugin-text2skin
+
+Kényelmi pluginok
+
+vdr-femon: csatorna térerő és infó
+vdr-live: a vdr vezérlése hálózati böngészőkből 
+vdr-osdteletext: teletext
+vdr-plugin-chanman: csatorna csoportosítás
+vdr-plugin-channellists: csatornalista váltás
+vdr-plugin-dvd: dvd lejátszás
+vdr-remote: távirányító használata
+vdr-epgfixer: EPG javító
+vdr-plugin-zappilot: gyors csatornaváltás
+vdr-screenshot: képernyőfotó
+vdr-tvguide: kényelmesebb EPG
+vdr-wirbelscan: csatornakeresés
 
 
+
+Alapból a vdr a beleépített Lcars skin-nel indul. 
 A vdr, ha valamit nem talál, vagy rossz a paramétere, akkor csak villan egyet, és kilép.
 Ilyenkor, hogy szóra bírjuk, tanácsos terminálból indítani először, vagy a vdrlaunch (szkripes indítás), vagy a sima vdr (/etc/conf.d indítás) paranccsal.
 Ha ilyenkor sem leszünk okosabbak, akkor nézzünk bele a /var/log/syslog fájlba, mert oda is írkál üzeneteket. Általában nem találja a betölteni kívánt plugint,vagy valamelyik paraméter hibás.
@@ -72,7 +123,9 @@ Jártam már úgy, hogy az egyik fájlban egy - ott maradt # nélkül és emiatt
 
 A /etc/vdr/setup.conf -ban is lehet, hogy valami nem jó és emiatt nem indul, tehát azzal is lehet próbálkozni, hogy ezt a fájlt ideiglenesen kivesszük a látóköréből, hogy újat gyártson!
 
+A xineliboutput plugin szinte mindig működik általában nem kell neki külön opció az ablakjának megjelenéséhez, ha megfelelő opcióját választjuk, a --video=xv a legbiztosabb. Illetve a --video=auto.
 A xineliboutput plugin csak a --hud opcióval, tehát hardveres OSD esetén használhat a skinflat, skinflatplus pluginokkal, a skinnopacity esetén még így sem. Reméljük, hogy helyre lesz hozva ez a hiba. Erről egyébként hagy üzenetet a syslogban, ha a vdr log level-je legalább 3. Ez az alapértelmezett egyébként.
+A xineliboutput is temérdek beállítási lehetőséggel rendelkezik. Ha nincs hang, akkor a menüjében erre is van megoldás, kimeneti eszközként a default elég jó eredményt ad.
 
 A softhddevice plugin is használható a xineliboutput plugin helyett megjelenítőként, főleg akkor, ha nvida kártyánk van. Ez a plugin hardveresen gyorsított megjelenítést használ, újabban az ATI kártyáknál is működik. Nvidia kártya esetén ajánlottabb a használata, mint a xineliboutput, mivel minden OSD működik vele. Ellenben UHU-RIA alatt valamiért duplázza a képeket, azaz akadozik a képmegjelenetítés nvidia drájverrel, ha a szoftveres kompozitálás a z asztalkezelőben engedélyezve van. Nouveau meghajtóval érdekes módon jó az nvidia kártyával. Nouveau használata estén ajánlatos a nouveau-vdpau-fw csomag feltelepítése, hogy hardveresen dekódoljon a grafikus megjelenítő nvidia chip.
 
@@ -95,9 +148,11 @@ A lejátszás, miután a vdr már fut, a xine vdr:// paranccsal lehetséges.
 A xine-ui -n a vdr gomb nem látszik az alapértelmezett skinnel, csak a xinium skinre fér rá, ott már látható és a skinből is indul a vdr, ha a gombra nyomunk.
 A videó megjelenítésének minősége a xine konfigurációjától függ. Lehet irányítan a vdr távirányítójával a vdr-t, vagy a xine menüjével. 
 
+A vdr/xbmc páros meg nyugodtan indul a régi módon, hisz ott parancssorból szkript által indul az xbmc indulása előtt a -Psc és a -Pxvdr paraméterekkel.
+UHU-RIA alatt az xbmc nevét mindenütt felváltotta a kodi név, az sc plugin léte nem kötelező már.
 
-UHU-2.2 alá is befrissítettem a VDR-t.
-Persze próba és teszt után.
+
+UHU-2.2 alatti jellegzetességek.
 
 Az UHU-3 -hoz képest a változás itt annyi, hogy a pluginok alap config fájljai a /etc/vdr/conf.avail könyvtárba települnek.
 Amennyiben a VDR-t a /etc/vdr/conf.d használatával indítjuk a sima vdr paranccsal, vagy a sima vdr indító menüponttal, akkor a betöltendő plugin config fájlját a /etc/vdr/conf.d -be kell linkelnük, ha meg változtatva szeretnénk használni, akkor linkelés helyett bemásoljuk oda és kívánságunknak megfelelően megszerkesztjük.
@@ -145,4 +200,3 @@ zappilot              enabled
 attila:~$
 
 A vdrctl --help segítséget ad a használatához.
-
