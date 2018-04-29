@@ -124,10 +124,13 @@ Jártam már úgy, hogy az egyik fájlban egy - ott maradt # nélkül és emiatt
 A /etc/vdr/setup.conf -ban is lehet, hogy valami nem jó és emiatt nem indul, tehát azzal is lehet próbálkozni, hogy ezt a fájlt ideiglenesen kivesszük a látóköréből, hogy újat gyártson!
 
 A xineliboutput plugin szinte mindig működik általában nem kell neki külön opció az ablakjának megjelenéséhez, ha megfelelő opcióját választjuk, a --video=xv a legbiztosabb. Illetve a --video=auto.
+UBK2 -n nekem egyből szó nélkül kilépett, csak a "-Pxineliboutput --video=auto" hatására indult el, második indításhoz ez már nem kellet, simán elindult.
 A xineliboutput plugin csak a --hud opcióval, tehát hardveres OSD esetén használhat a skinflat, skinflatplus pluginokkal, a skinnopacity esetén még így sem. Reméljük, hogy helyre lesz hozva ez a hiba. Erről egyébként hagy üzenetet a syslogban, ha a vdr log level-je legalább 3. Ez az alapértelmezett egyébként.
 A xineliboutput is temérdek beállítási lehetőséggel rendelkezik. Ha nincs hang, akkor a menüjében erre is van megoldás, kimeneti eszközként a default elég jó eredményt ad.
 
-A softhddevice plugin is használható a xineliboutput plugin helyett megjelenítőként, főleg akkor, ha nvida kártyánk van. Ez a plugin hardveresen gyorsított megjelenítést használ, újabban az ATI kártyáknál is működik. Nvidia kártya esetén ajánlottabb a használata, mint a xineliboutput, mivel minden OSD működik vele. Ellenben UHU-RIA alatt valamiért duplázza a képeket, azaz akadozik a képmegjelenetítés nvidia drájverrel, ha a szoftveres kompozitálás a z asztalkezelőben engedélyezve van. Nouveau meghajtóval érdekes módon jó az nvidia kártyával. Nouveau használata estén ajánlatos a nouveau-vdpau-fw csomag feltelepítése, hogy hardveresen dekódoljon a grafikus megjelenítő nvidia chip.
+A softhddevice plugin is használható a xineliboutput plugin helyett megjelenítőként, főleg akkor, ha nvida kártyánk van.
+Harveres DVB eszköz híján a videó lejátszási menü nincs nál, ami a xineliboutput esetében megjelenik.
+Ez a plugin hardveresen gyorsított megjelenítést használ, újabban az ATI kártyáknál is működik. Nvidia kártya esetén ajánlottabb a használata, mint a xineliboutput, mivel minden OSD működik vele. Ellenben UHU-RIA alatt valamiért duplázza a képeket, azaz akadozik a képmegjelenetítés nvidia drájverrel, ha a szoftveres kompozitálás a z asztalkezelőben engedélyezve van. Nouveau meghajtóval érdekes módon jó az nvidia kártyával. Nouveau használata estén ajánlatos a nouveau-vdpau-fw csomag feltelepítése, hogy hardveresen dekódoljon a grafikus megjelenítő nvidia chip.
 
 Távirányító, billentyűzet betanítása, használata.
 
