@@ -7,7 +7,7 @@ vdr-femon
 vdr-osdteletext
 vdr-plugin-chanman
 vdr-plugin-streamdev
-vdr-plugin-xvdr
+vdr-plugin-xvdr #failed
 vdr-screenshot
 vdr-epgfixer
 vdr-plugin-channellists
