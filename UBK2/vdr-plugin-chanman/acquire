@@ -1,4 +1,4 @@
 #!/usr/bin/env dl
 
-vdr-plugin-chanman-${UB_VERSION}.tar.gz vdr-plugin-chanman-${UB_VERSION}/
-  http://projects.vdr-developer.org/attachments/download/1004/
+vdr-plugin-chanman-${UB_VERSION}.tar.gz vdr-plugin-chanman-f4321b1/chanman/
+    git://github.com/vdr-projects/vdr-plugin-chanman.git@f4321b1
