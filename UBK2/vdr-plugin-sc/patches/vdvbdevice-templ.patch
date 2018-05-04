@@ -1,0 +1,24 @@
+diff -Nur orig/device-tmpl.c mod/device-tmpl.c
+--- orig/device-tmpl.c	2012-07-21 20:51:33.000000000 +0200
++++ mod/device-tmpl.c	2018-05-02 16:34:06.132129467 +0200
+@@ -41,7 +41,6 @@
+ #endif //!SASC
+ protected:
+ #ifndef SASC
+-  virtual bool Ready(void);
+   virtual bool SetPid(cPidHandle *Handle, int Type, bool On);
+   virtual bool SetChannelDevice(const cChannel *Channel, bool LiveView);
+   virtual bool OpenDvr(void);
+@@ -164,12 +163,6 @@
+   return cam || hwciadapter;
+ }
+ 
+-bool SCDEVICE::Ready(void)
+-{
+-  return (cam         ? cam->Ready():true) &&
+-         (hwciadapter ? hwciadapter->Ready():true);
+-}
+-
+ bool SCDEVICE::SetPid(cPidHandle *Handle, int Type, bool On)
+ {
+   if(cam) cam->SetPid(Type,Handle->pid,On);
