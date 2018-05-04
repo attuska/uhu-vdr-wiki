@@ -25,5 +25,5 @@ vdr-xine
 vdr-softhddevice
 vdr-xineliboutput
 vdr-skindesigner
-vdr-tvguide
+vdr-plugin-tvguideng
 kodi-addon-xvdr
