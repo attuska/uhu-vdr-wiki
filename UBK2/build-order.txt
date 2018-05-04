@@ -24,6 +24,6 @@ vdr-skinflatplus
 vdr-xine
 vdr-softhddevice
 vdr-xineliboutput
-vdr-skinnopacity
+vdr-skindesigner
 vdr-tvguide
 kodi-addon-xvdr
