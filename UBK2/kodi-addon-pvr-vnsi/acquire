@@ -1,0 +1,4 @@
+#!/usr/bin/env dl
+
+pvr.vdr.vnsi-${UB_VERSION}.tar.gz pvr.vdr.vnsi-5d54ac0/
+  git://github.com/kodi-pvr/pvr.vdr.vnsi.git@5d54ac0

@@ -27,4 +27,7 @@ vdr-xineliboutput
 vdr-plugin-skindesigner
 vdr-plugin-tvguideng
 vdr-plugin-vnsiserver
+platform
+kodi-platform
+kodi-addon-pvr-vnsi
 kodi-addon-xvdr
