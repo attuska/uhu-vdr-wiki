@@ -1,1 +1,1 @@
-curl -s -k https://raw.githubusercontent.com/vdr-projects/vdr-plugin-chanman/master/chanman/CHANGELOG | grep '^\-0.0' | sed s/-//g | sort -V | tail -n 1 | tr -d '[:space:]' 
+u2d https://github.com/attuska/vdr-plugin-chanman/releases/ v 
