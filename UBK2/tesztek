@@ -1,0 +1,32 @@
+vdr_2.4.0-1.1_amd64.ubk.uhu
+    - ok
+vdr-plugin-sc_0.9.3.20120815-2.1_amd64.ubk.uhu
+    - ok
+vdr-xineliboutput_2.1.0-1.1_amd64.ubk.uhu
+    - vdpau ok
+    - truecolor + hud ok
+    - nem truecolor +hud módban a truecolor skinekkel szegmentációs hiba
+vdr-softhddevice_0.6.1rc1-2.1_amd64.ubk.uhu
+    - SD adók továbbra is vacakok, állandó képduplázás
+vdr-femon_2.4.0-1.1_amd64.ubk.uhu
+    - ok
+vdr-osdteletext_0.9.7-1.1_amd64.ubk.uhu
+    - sofhddevice: van, de kicsi a softhddevice ablakban
+    - xineliboutput: semmi sincs, de truecolor és hud engedélyezésével jó
+vdr-plugin-skindesigner
+    - ok, de csak truecolor módban megy.
+vdr-plugin-zappilot_0.0.5-2.1_amd64.ubk.uhu
+    - ok
+vdr-skinelchi_0.3.0-1.1_amd64.ubk.uhu
+    - ok
+    - release megnövelendő
+vdr-skinflat_0.1.1-2.1_amd64.ubk.uhu
+    - ok
+vdr-plugin-chanman_0.0.12-1.1_amd64.ubk.uhu
+    - ok
+vdr-plugin-channellists_0.0.6-1.1_amd64.ubk.uhu
+    - ok
+vdr-plugin-tvguideng_0.3.0-1.1_amd64.ubk.uhu
+    - ok
+    - a tvguide -t nem szedi le, conflicts kell!
+    - nem minden osd-vel megy
