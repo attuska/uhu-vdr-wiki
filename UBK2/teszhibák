@@ -15,9 +15,5 @@ Specified sensor(s) not found!
 /usr/lib/vdr/skindesigner/scripts/temperatures: sor: 28: nvidia-smi: parancs nem található
 Szegmentálási hiba (core készült)
 
-channelists fordítási hibák:
-poros -> piros
-csatornalisák ->csatornalisták
-
 Médialejátszás után mindig elszáll.
 
