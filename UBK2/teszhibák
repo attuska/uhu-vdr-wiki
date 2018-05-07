@@ -1,0 +1,16 @@
+DVB eszköz nincs.
+nvidia-GF210 nouveau
+"xineliboutput --hud -t" opcióval
+
+skindesigner OSD-vel fájllejátszás
+
+sh: /usr/lib/vdr/skindesigner/scripts/vdrstats: Nincs ilyen fájl vagy könyvtár
+Specified sensor(s) not found!
+/usr/lib/vdr/skindesigner/scripts/temperatures: sor: 28: nvidia-smi: parancs nem található
+sh: /usr/lib/vdr/skindesigner/scripts/vdrstats: Nincs ilyen fájl vagy könyvtár
+Specified sensor(s) not found!
+/usr/lib/vdr/skindesigner/scripts/temperatures: sor: 28: nvidia-smi: parancs nem található
+sh: /usr/lib/vdr/skindesigner/scripts/vdrstats: Nincs ilyen fájl vagy könyvtár
+Specified sensor(s) not found!
+/usr/lib/vdr/skindesigner/scripts/temperatures: sor: 28: nvidia-smi: parancs nem található
+Szegmentálási hiba (core készült)
