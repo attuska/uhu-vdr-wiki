@@ -7,7 +7,7 @@ vdr-femon
 vdr-osdteletext
 vdr-plugin-chanman
 vdr-plugin-streamdev
-vdr-plugin-xvdr #failed
+vdr-plugin-xvdr
 vdr-screenshot
 vdr-epgfixer
 vdr-plugin-channellists
@@ -26,8 +26,9 @@ vdr-softhddevice
 vdr-xineliboutput
 vdr-plugin-skindesigner
 vdr-plugin-tvguideng
+kodi-addon-xvdr
 vdr-plugin-vnsiserver
-platform
+p8-platform
 kodi-platform
 kodi-addon-pvr-vnsi
 kodi-addon-xvdr
