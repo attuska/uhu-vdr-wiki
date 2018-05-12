@@ -1,4 +1,4 @@
 #!/usr/bin/env dl
 
-kodi-platform-${UB_VERSION}.tar.gz kodi-platform-7f1f71349ac25f9e03a3b50ea6ee225e1414eab8/
-	git://github.com/xbmc/kodi-platform.git@7f1f71349ac25f9e03a3b50ea6ee225e1414eab8
+kodi-platform-${UB_VERSION}.tar.gz kodi-platform-e8574b883ffa2131f2eeb96ff3724d60b21130f7/
+	git://github.com/xbmc/kodi-platform.git@e8574b883ffa2131f2eeb96ff3724d60b21130f7
