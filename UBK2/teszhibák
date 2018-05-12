@@ -1,6 +1,6 @@
 DVB eszköz nincs.
 nvidia-GF210 nouveau
-"xineliboutput --hud -t" opcióval
+"-Pxineliboutput --hud -t" opcióval
 
 skindesigner OSD-vel fájllejátszás
 
@@ -16,4 +16,16 @@ Specified sensor(s) not found!
 Szegmentálási hiba (core készült)
 
 Médialejátszás után mindig elszáll.
+
+Thread 1 "vdr" received signal SIGSEGV, Segmentation fault.
+0x00007fffdbb14f35 in xine_post_wire_audio_port () from /usr/lib/libxine.so.2
+(gdb) q
+
+vdpau-val, az nvidia-340 feltelepítése utánű
+Az nvidia-smi már van.
+A lejátszás végén lévő elszállás megmarad.
+Ellenben temérdek ilyen sorvan:
+assert: vo_scale.c:83: _x_vo_scale_compute_ideal_size: Assertion `this->gui_pixel_aspect != 0.0' failed.
+
+
 
