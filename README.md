@@ -1,3 +1,4 @@
 # vdr4uhu
-VDR csomagok build szkriptek.
-VDR használat UHU-Linux verzióknál.
+VDR csomagok build szkripjei.
+
+Wikiben VDR használata UHU-Linux verzióknál.
