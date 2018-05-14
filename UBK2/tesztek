@@ -5,22 +5,21 @@ vdr-plugin-sc_1.0.0-1.1_amd64.ubk.uhu
     - ok
 vdr-xineliboutput_2.1.0-1.1_amd64.ubk.uhu
     - vdpau ok
-    - truecolor + hud ok
+    - truecolor + hud ok ("-Pxineliboutput --hud -t"
     - nem truecolor +hud módban a truecolor skinekkel szegmentációs hiba
 vdr-softhddevice_0.6.1rc1-2.1_amd64.ubk.uhu
-    - SD adók továbbra is vacakok, állandó képduplázás
+    - SD adók továbbra is vacakok, állandó képduplázás kép kompozitálással.
 vdr-femon_2.4.0-1.1_amd64.ubk.uhu
     - ok
 vdr-osdteletext_0.9.7-1.1_amd64.ubk.uhu
     - sofhddevice: van, de kicsi a softhddevice ablakban
-    - xineliboutput: semmi sincs, de truecolor és hud engedélyezésével jó
+    - xineliboutput: semmi sincs, de truecolor és hud engedélyezésével jó és hasonlóan kisméretű
 vdr-plugin-skindesigner
     - ok, de csak truecolor módban megy.
 vdr-plugin-zappilot_0.0.5-2.1_amd64.ubk.uhu
     - ok
 vdr-skinelchi_0.3.0-1.1_amd64.ubk.uhu
     - ok
-    - release megnövelendő
 vdr-skinflat_0.1.1-2.1_amd64.ubk.uhu
     - ok
 vdr-plugin-chanman_0.0.12-1.1_amd64.ubk.uhu
@@ -29,5 +28,13 @@ vdr-plugin-channellists_0.0.6-1.1_amd64.ubk.uhu
     - ok
 vdr-plugin-tvguideng_0.3.0-1.1_amd64.ubk.uhu
     - ok
-    - a tvguide -t nem szedi le, conflicts kell!
-    - nem minden osd-vel megy
+    - csak truecolor osd-vel megy
+
+dvb eszköz nélkül nézve csak a xileliboutput közbeiktatésával adnak csatornát
+
+vdr-plugin-vnsiserver_1.6.0-1.1_amd64.ubk.uhu
+kodi-addon-pvr-vnsi_1.11.19-1.1_amd64.ubk.uhu
+    -ok -nak tűnik
+vdr-xine_0.9.5-2.1_amd64.ubk.uhu
+    -ok -nak tűnik, de csak alsó osd van egy kis időre, hogy nincs dvb eszköz.
+
