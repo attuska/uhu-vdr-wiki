@@ -1,6 +1,6 @@
 diff -Nur orig/po/hu.po mod/po/hu.po
 --- orig/po/hu.po	1970-01-01 01:00:00.000000000 +0100
-+++ mod/po/hu.po	2018-05-04 12:19:00.111684713 +0200
++++ mod/po/hu.po	2018-05-14 08:52:56.045576000 +0200
 @@ -0,0 +1,186 @@
 +# Copyright (C) 2014
 +# This file is distributed under the same license as the PACKAGE package.
@@ -67,7 +67,7 @@ diff -Nur orig/po/hu.po mod/po/hu.po
 +msgstr "Skin törlés"
 +
 +msgid "Skin Designer"
-+msgstr "Skin szerkesztő"
++msgstr "Skin beállító"
 +
 +msgid "version"
 +msgstr "verzó"
@@ -121,7 +121,7 @@ diff -Nur orig/po/hu.po mod/po/hu.po
 +msgstr "Képbetöltés nyomkövetése"
 +
 +msgid "Cache icons, skinparts and logos at start"
-+msgstr "Ikonok, Skinrészek és logók gyorstárazása"
++msgstr "Ikonok, skinrészek és logók gyorstárazása"
 +
 +msgid "Limit Channel Logo Cache"
 +msgstr "logó gyorsítótár korlát"
@@ -172,13 +172,13 @@ diff -Nur orig/po/hu.po mod/po/hu.po
 +msgstr "új skin"
 +
 +msgid "Preview Skin"
-+msgstr "Skin előkép"
++msgstr "Skin előzetes"
 +
 +msgid "Help"
 +msgstr "Segítség"
 +
 +msgid "Preview"
-+msgstr "Előnézet"
++msgstr "Előzetes"
 +
 +msgid "Author"
 +msgstr "Szerző"
