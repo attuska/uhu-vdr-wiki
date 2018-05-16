@@ -34,3 +34,5 @@ p8-platform
 kodi-platform
 kodi-addon-pvr-vnsi
 kodi-addon-xvdr
+w-scan
+dvb-apps
