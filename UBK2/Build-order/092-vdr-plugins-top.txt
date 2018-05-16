@@ -6,6 +6,7 @@ vdr-skinelchi
 vdr-femon
 vdr-osdteletext
 vdr-plugin-chanman
+vdr-plugin-dvd
 vdr-plugin-streamdev
 vdr-plugin-xvdr
 vdr-screenshot
