@@ -38,3 +38,5 @@ kodi-addon-pvr-vnsi_1.11.19-1.1_amd64.ubk.uhu
 vdr-xine_0.9.5-2.1_amd64.ubk.uhu
     -ok -nak tűnik, de csak alsó osd van egy kis időre, hogy nincs dvb eszköz.
 
+oscam_1.20~r11420-1.1_amd64.ubk.uhu
+    - ok -nak tűnik, webif működik, a http://192.168.1.100:8888 cím megnyítható firefoxban
