@@ -19,7 +19,7 @@ vdr-femon_2.4.0-1.3_amd64.ubk3.uhu
 vdr-live_2.3.1-1.3_amd64.ubk3.uhu
     ?
 vdr-osdteletext_2.1.1-1.1_amd64.ubk3.uhu
-    ?
+    - ok
 vdr-plugin-chanman_0.0.12-1.3_amd64.ubk3.uhu
     - ok
 vdr-plugin-channellists_0.0.6-1.3_amd64.ubk3.uhu
@@ -41,7 +41,7 @@ vdr-plugin-tvguide_1.2.8-1.1_amd64.ubk3.uhu
 vdr-plugin-tvguideng_0.3.0-1.4_amd64.ubk3.uhu
     ?
 vdr-plugin-vaapidevice_0.7.0-1.4_amd64.ubk3.uhu
-    ?
+    vdr: /usr/lib/vdr/libvdr-vaapidevice.so.2.4.6: undefined symbol: vaPutSurface
 vdr-plugin-vnsiserver_1.8.0-1.3_amd64.ubk3.uhu
     - ok
 vdr-plugin-xvdr_0.9.9-1.3_amd64.ubk3.uhu
@@ -63,7 +63,7 @@ vdr-skinnopacity_1.1.7-1.1_amd64.ubk3.uhu
 vdr-skinsoppalusikka_2.4.0-1.3_amd64.ubk3.uhu
     - ok
 vdr-softhddevice_1.1.0-1.2_amd64.ubk3.uhu
-    ?
+    nvidia-340 ok, nouveau: segmentation fault
 vdr-wirbelscan_2021.03.07-1.1_amd64.ubk3.uhu
     ?
 vdr-xine_0.9.5-1.4_amd64.ubk3.uhu
