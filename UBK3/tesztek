@@ -42,7 +42,7 @@ vdr-plugin-tvguide_1.2.8-1.1_amd64.ubk3.uhu
 vdr-plugin-tvguideng_0.3.0-1.4_amd64.ubk3.uhu
     - ok, de csak skindesigner skinekkel megy
 vdr-plugin-vaapidevice_0.7.0-1.4_amd64.ubk3.uhu
-    vdr: /usr/lib/vdr/libvdr-vaapidevice.so.2.4.6: undefined symbol: vaPutSurface
+    nouveau, nvidia-340: Szegmentálási hiba (core készült)
 vdr-plugin-vnsiserver_1.8.0-1.3_amd64.ubk3.uhu
     - ok
 vdr-plugin-xvdr_0.9.9-1.3_amd64.ubk3.uhu
