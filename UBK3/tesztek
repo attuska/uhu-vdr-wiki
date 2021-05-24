@@ -5,13 +5,13 @@ kodi_19.1-1.1_amd64.ubk3.uhu
 kodi-addon-pvr-vnsi_8.2.2-1.3_amd64.ubk3.uhu
     - ok
 oscam_1.20~r11420-1.2_amd64.ubk3.uhu
-    ?
+    http://192.168.0.189:8888/ címen van a webif, a dvbapival a vdr rácsatlakozik
 vdr_2.4.6-1.1_amd64.ubk3.uhu
     - ok
 vdrctl_0.1.1-1.2_amd64.ubk3.uhu
     - ok
 vdr-dvbapi_2.2.5-1.4_amd64.ubk3.uhu
-    ?
+    - ok
 vdr-epgfixer_0.3.1-1.3_amd64.ubk3.uhu
     ?
 vdr-femon_2.4.0-1.3_amd64.ubk3.uhu
