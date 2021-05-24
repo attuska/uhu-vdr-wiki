@@ -65,7 +65,7 @@ vdr-skinnopacity_1.1.7-1.1_amd64.ubk3.uhu
 vdr-skinsoppalusikka_2.4.0-1.3_amd64.ubk3.uhu
     - ok
 vdr-softhddevice_1.1.0-1.2_amd64.ubk3.uhu
-    nvidia-340 ok, nouveau: segmentation fault
+    nvidia-340 ok, nouveau: már valamennyire jó
 vdr-wirbelscan_2021.03.07-1.1_amd64.ubk3.uhu
     ?
 vdr-xine_0.9.5-1.4_amd64.ubk3.uhu
