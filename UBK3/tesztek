@@ -45,8 +45,6 @@ vdr-plugin-vaapidevice_0.7.0-1.4_amd64.ubk3.uhu
     nouveau, nvidia-340: Szegmentálási hiba (core készült)
 vdr-plugin-vnsiserver_1.8.0-1.3_amd64.ubk3.uhu
     - ok
-vdr-plugin-xvdr_0.9.9-1.3_amd64.ubk3.uhu
-    ?
 vdr-plugin-zappilot_0.0.6-1.3_amd64.ubk3.uhu
     - ok
 vdr-remote_0.7.0-1.3_amd64.ubk3.uhu
